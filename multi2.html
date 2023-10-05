@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form method="post" action="test.php">
+            <b>Applicant Detail</b>
+            <br>
+            Firstname: <input type="text" name="tname" placeholder="Enter Firstname" required><br>
+            Lastname: <input type="text" name="tsurname" placeholder="Enter Lastname" required><br>
+            School :
+            <select name="tschool" required>
+                <option value="1"> โรงเรียนจ่านกร้อง </option>
+                <option value="2"> โรงเรียนเฉลิมขวัญสตรี </option>
+                <option value="3" selected> โรงเรียนพิษณุโลกพิทยาคม </option>
+                <option value="4"> โรงเรียนสาธิตมหาวิทยาลัยนเรศวร </option>
+                <option value="5"> โรงเรียนพุทธชินราช </option>
+            </select><br>
+            GPA: <input type="text" name="gpa" size="5" placeholder="Enter GPA"><br>
+            Major:
+                <input type="radio" name="mj1" required> วิทยาการคอมพิวเตอร์
+                <input type="radio" name="mj1" checked required> เทคโนโลยีสารสนเทศ<br>
+            Birthday: <input type="date" name="hdb"><br>
+            Mobile <input type="tel" id="mobile" name="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            Email <input type="email" name="email" placeholder="Enter Email"><br>
+            Picture <input type="file" name="img_file"><br><br>
+            <input type="submit" name="submit" value="Apply">
+            <input type="reset" name="reset" value="Cancel">
+            </form>
+    </body>
+</html>

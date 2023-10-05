@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <style>body {
+    background: #212437;
+    color : #D8DB82;
+}</style>
+  <body>
+      <center>
+    <table style="border:double 8px #D8DB82;padding:7px" width=400><tbody><tr><td align="center" valign="middle" >
+        <form>
+            <tr>
+            <td style="blacground-color:#E28B08" colspan="2"><h2>Sign up</h2></td><td></td></tr>
+            <tr>
+                <td><lable for="FirstName">First Name</lable></td>
+                <td><input type="text" id="FirstName" name="FirstName" value=""></td>
+            </tr>
+            <tr>
+                <td><lable for="LastName">Last Name</lable></td>
+                <td><input type="text" id="LastName" name="LastName" value=""></td>
+            </tr>
+            <tr>
+                <td><lable for="ScreenName">Screen Name</lable></td>
+                <td><input type="text" id="ScreenName" name="ScreenName" value=""></td>
+            </tr>
+            <tr>
+                <td><lable for="DateOfBirth">Date of Birth</lable></td>
+                <td>
+                    <select id="selectbox2">
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                    <select id="length"></select>
+                    <select id="years"></select>
+                </td>
+            </tr>
+            <tr>
+                <td><lable for="Gender">Gender</label></td>
+                <td><input type="radio" id="Male" name="Gender" value="Male"><label for="Male">Male</label>
+                    <input type="radio" id="Female" name="gender" value="Female"><label for="Female">Female</label></td>
+            </tr>
+            <tr>
+                <td><lable for="Country">Country</label></td>
+                <td><select name="Country" id="Country" value="USA">
+                    <option value="USA">USA</option>
+                    <option value="England">England</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Japan">Japan</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><lable for="email">E-mail</label></td>
+                <td><input type="email" id="email" name="email" value=""></td>
+            </tr>
+            <tr>
+                <td><lable for="Phone">Phone</label></td>
+                <td><input type="tel" name="phone" value=""></td>
+            </tr>
+            <tr>
+                <td><lable for="password">Password</label></td>
+                <td><input type="password" id="password" name="password" value=""></td>
+            </tr>
+            <tr>
+                <td><lable for="confirmpassword">Confirm Password</label></td>
+                <td><input type="password" id="password" name="confirmpassword" value=""></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Red" /><label for="vehicle1">&nbsp;I agree to the Terms of Use</label></td>
+            </tr><tr>
+                <td></td>
+                <td><button type="button" value="Submit">Submit</button>
+                    <button type="reset" value="Cancel">Cancel</button></td>
+            </tr>
+        </form>
+        <script type="text/javascript">
+            var select = document.getElementById('length');    
+            for (var i = 1; i<= 31; i++){
+                var option = document.createElement('option');
+                option.value = i;
+                option.innerHTML = i;
+                select.options.add(option);
+            }
+    
+            var selecty = document.getElementById('years');    
+            for (var i = 1980; i<= 2000; i++){
+                var option = document.createElement('option');
+                option.value = i;
+                option.innerHTML = i;
+                selecty.options.add(option);
+            }
+    
+            
+        </script>
+    </td>
+        </tr>
+    </tbody>
+</table>
+</center>
+    </table>
+  </body>
+</html>

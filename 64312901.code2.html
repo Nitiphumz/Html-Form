@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title> Student ID Form </title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    #Background {
+        width: 580px;
+        height: 480px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: double;
+        border-color: rgb(0, 0, 0);
+    }
+
+    #Box {
+
+    }
+
+    #text-name {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Address{
+        display: flex;
+        margin-bottom: 15px;
+    }
+</style>
+
+<body>
+    <div id="Background" style="background-color :rgb(255, 208, 150)">
+        <div id="Box">
+            <div id="text-name">
+
+<form>
+<label for="name">Name ::</label> 
+<input type="text" id="name" name="name" value="Bunthita" style="background-color: orange">
+
+<label for="lastname">Surname::</label>
+<input type="text" id="lastname" name="lastname" value="Ongboon" style="background-color:orange"><br><br>
+
+<label for="birthday">Birthday ::</label>
+<input type="date" id="birthday" name="birthday" style="background-color: orange">
+
+Major : 
+<select name="major" style="background-color: orange">
+    <option value="it"> Information Technology</option>
+    <option value="cs">Computer Science</option>
+    <option value="bio">Biology </option>
+    <option value="chem">Chemistry</option>
+</select> <br><br>
+
+<label for="age">Age :: </label>
+<input type="number" name="age" min="18" max="22" style="background-color: orange"> <br><br>
+
+<div id="Address">
+<label for="address">Address ::</label>
+<textarea row="5" col="15" placeholder ="address" style="background-color: orange"> </textarea><br><br>
+</div>
+
+<label for="email">Email ::</label>
+<input type="text" id="email" name="email" value="" style="background-color: orange"><br><br>
+
+<label for="color">Color ::</label>
+<input type="checkbox" name="Color" value="orange" > Orange
+<input type="checkbox" name="Color" value="Black" > Black
+<input type="checkbox" name="Color" value="Red"> Red<br><br>
+
+<label for="gender">Sex ::</label>
+<input type="radio" name="gender" value="male" > Male
+<input type="radio" name="gender" value="female" checked> Female<br><br>
+
+<label for="salary">Salary::</label>
+<input type="text" id="salary" name="salary" size="15" style="background-color: orange"> Bath <br><br>
+
+<label for="web">Website::</label>
+<input type="text" id="web" name="web" style="background-color: orange"> <br><br>
+
+<div id="Box-button">
+    <input Type="submit" value="Save">
+    <input Type="reset" value="Cancel">
+            </div>
+    </div>
+</div>
+</form>
+
+</body>
+
+</html>

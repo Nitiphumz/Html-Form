@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student ID Form </title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            #Background {
+                width: 600px;
+                height: 450px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-style:solid;
+                border-color: rgb(0, 0, 0);
+            }
+
+            #Box {}
+
+            #firstname {
+                margin-left: 10px;
+                background-color: rgb(243, 152, 24);
+            }
+
+            #lastname {
+                margin-left: 10px;
+                background-color: rgb(243, 152, 24);
+            }
+
+            #text-name {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #Address {
+                display: flex;
+                margin-bottom: 15px;
+            }
+            #bday {
+                margin-left: 10px;
+                background-color: rgb(243, 152, 24);
+            }
+            #major {
+                margin-left: 10px;
+                background-color: rgb(243, 152, 24);
+            }
+            #age {
+                margin-left: 10px;
+                background-color: rgb(243, 152, 24);
+            }
+            #email {
+                margin-left: 10px;
+                background-color: rgb(243, 152, 24);
+            }
+            #salary {
+                margin-left: 10px;
+                background-color: rgb(243, 152, 24);
+            }
+            #website {
+                margin-left: 10px;
+                background-color: rgb(243, 152, 24);
+            }
+            #Box-button{
+                width: 240px;
+            }
+        </style>
+        <body>
+            
+        <div id="Background" style="background-color :antiquewhite">
+            <div id="Box">
+            <div id="text-name">
+            <form>
+                Name :: 
+            <input type="text" id="firstname" name="firstname" value="นิติภูมิ">
+                Surname ::
+            <input type="text" id="lastname" name="lastname" value="อินทกนก"> 
+            </div>
+            <br>
+            Birthday ::
+            <input type="date" id="bday" name="bday">
+            Major ::
+        <select name="Major" id="major">
+            <option value="IT">Information Technology</option>
+            <option value="CS">Computer Science</option>
+            <option value="CHEM">Chemistry</option>
+            <option value="PHYS">Applied Physics</option>
+        </select>
+        <br><br>
+
+        <label for="age"> Age ::</label>
+        <select id="age">
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+        </select>
+        <br><br>
+
+        <div id="Address">
+            <label for="address">Address ::</label>
+            <textarea row="5" col="15" placeholder ="address" style="background-color:rgb(243, 152, 24)"> </textarea><br><br>
+        </div>
+
+            <form>
+                    Email :: 
+                <input type="email" id="email" name="Email"> <br><br>
+
+                    Color ::
+                <input type="checkbox" name="Color"  value="Red" > Red
+                <input type="checkbox" name="Color"  value="Green"> Green
+                <input type="checkbox" name="Color"  value="Yellow"> Yellow
+            <br><br>
+
+                    Sex :: 
+                <input type=radio  name=box value="1"> Male 
+                <input type=radio  name=box value="1"> Female <br><br>
+                    Saraly ::
+                <input type="text" id="salary" name="Salary"> Bath <br><br>
+                    Website  
+                <input type="text" id="website" name="input-website"> <br><br>    
+            <div id="Box-button">
+                <center>
+                <input Type="submit" value = "Save">
+                <input Type="reset" value = "Cancel">
+                </center>
+            </div>
+            </div>
+        </div>
+        </body>
+    </head>
+</html>

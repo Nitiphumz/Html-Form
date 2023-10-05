@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            #Box {
+                width: 550px;
+                height: 450px;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                border-style:dashed;
+                border-color:coral;
+                border-radius: 10px;
+            }
+        
+            #buttom {
+                width: 250px;
+            }
+            
+        </style>
+        <title> Test </title>
+        <body>
+            <div id="Box" style="background-color:antiquewhite">
+                <div id="box2">
+            <form>
+                Name ::
+                <input type="text" name="firstname" value="Nitiphumi">
+                Surname ::
+                <input type="text" name="lastname" value="Intakanok"> <br><br>
+                Birthday ::
+                <input type="date" name="bday">
+                Major ::
+                <select name="major">
+                    <option> IT </option>
+                    <option> Computer Science </option>
+                    <option> Chemistry </option>
+                    <option> Applied Physics </option>
+                    <option> Nu University </option>
+                </select>
+                <br><br>
+                Age ::
+                <input type="number" name="age" min="18" max="22"> <br><br>
+                Address::
+                <textarea name="message" rows="5" cols="25"></textarea><br><br>
+                Email :: 
+                <input type="text" name="Email"> <br><br>
+
+                Color ::
+                <input type="checkbox" name="Color" checked value="Red" > Red
+                <input type="checkbox" name="Color" checked value="Green"> Green
+                <input type="checkbox" name="Color" checked value="Yellow"> Yellow <br><br>
+
+                Sex ::
+                <input type="radio" name="box" checked value="1"> Male
+                <input type="radio" name="box"  value="2"> Female <br><br>
+                Salary ::
+                <input type="text" name="Salary"> Bath <br><br>
+                Website ::
+                <input type="text" name="web"> <br><br>
+
+                <div id="buttom">
+                    <center>
+                <input Type="submit" value = "Save">
+                <input Type="reset" value = "Cancel">
+                    </center>
+                </div>
+
+            </form>
+            </div>
+        </div>
+        </body>
+    </head>
+</html>
